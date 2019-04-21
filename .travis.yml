@@ -21,6 +21,13 @@ before_install:
 install:
   - npm install
 
+notifications:
+  email:
+    recipients:
+    - 356671808@qq.com
+    on_success: always
+    on_failure: always
+
 script:
   - npm run build
   - npm run local
@@ -33,6 +40,3 @@ after_script:
   - git commit -m "Update tools"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
   - rm -rf local
-
-after_success:
-  - echo "success"
