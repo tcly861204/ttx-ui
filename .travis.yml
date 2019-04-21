@@ -31,5 +31,4 @@ after_script:
   - git init
   - git add .
   - git commit -m "Update tools"
-  # - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
-  - git push -f git@github.com:${U_NAME}/ttx-ui.git master:${P_BRANCH}
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
