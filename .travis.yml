@@ -10,6 +10,10 @@ branches:
 env:
   global:
 
+cache:
+  directories:
+    - node_modules
+
 before_install:
   - git config --global user.name "${U_NAME}"
   - git config --global user.email "${U_EMAIL}"
@@ -25,8 +29,7 @@ script:
 after_script:
   - cd ./local
   - git init
-  - git config user.name "${U_NAME}"
-  - git config user.email "${U_EMAIL}"
   - git add .
   - git commit -m "Update tools"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+  # - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+  - git push -f git@github.com:${U_NAME}/ttx-ui.git master:${P_BRANCH}
