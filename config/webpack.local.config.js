@@ -19,6 +19,7 @@ module.exports = webpackMerge(baseConfig, {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../examples/index.html'), // 注意路径为根目录下的路径
       filename: 'index.html', // 打包后也叫做 index.html
+      favicon: path.resolve(__dirname, '../examples/favicon.ico'),
       minify: {     // 压缩这个html文件(主要是对HTML文件进行压缩)
         removeAttributeQuotes: true,        // 删除这个html文件的双引号
         collapseWhitespace: true      // 变成一行

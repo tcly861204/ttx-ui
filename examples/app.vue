@@ -22,3 +22,10 @@
     }
   }
 </script>
+<style lang="less">
+html, body, div{
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+</style>
