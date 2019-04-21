@@ -25,7 +25,7 @@ notifications:
   email:
     recipients:
     - 356671808@qq.com
-    on_success: always
+    on_success: change
     on_failure: always
 
 script:
@@ -37,6 +37,6 @@ after_script:
   - cd ./local
   - git init
   - git add .
-  - git commit -m "Update tools"
+  - git commit -m "update ttx-ui components"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
   - rm -rf local
