@@ -4,10 +4,8 @@ import App from './app.vue';
 import TTx from '../src/main';
 Vue.use(VueRouter);
 Vue.use(TTx);
-
 // 开启debug模式
-Vue.config.debug = true;
-
+Vue.config.debug = false;
 // 路由配置
 const router = new VueRouter({
     esModule: false,

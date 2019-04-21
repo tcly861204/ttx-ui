@@ -25,7 +25,7 @@ notifications:
   email:
     recipients:
     - 356671808@qq.com
-    on_success: change
+    on_success: always
     on_failure: always
 
 script:

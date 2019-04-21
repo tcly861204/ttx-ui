@@ -10,7 +10,7 @@ export default {
 .button{
   width: 80px;
   height: 40px;
-  border: 3px;
+  border-radius: 6px;
   text-align: center;
   line-height: 40px;
   background: #f60;
