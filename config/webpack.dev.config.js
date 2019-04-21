@@ -8,7 +8,7 @@ module.exports = webpackMerge(baseConfig, {
   output: {  // 打包的文件位置
     filename: 'js/[name].[hash:8].js', //当js文件更改， [hash]的值会变化，每次build会生成一个新的js文件，[hash:8]，只显示8位的hash值，打包出来当然文件名叫 bundle.js
     path: path.resolve(__dirname, '../local'), //resolve() 可以把相对路径解析成绝对路径， __dirname 是当前目录，路径必须是一个绝对路径，相对于根目录
-    publicPath: '/',
+    publicPath: '/ttx-ui/',
     chunkFilename: "[name].chunk.js"
   },
   devServer: { // 开发服务器的配置
