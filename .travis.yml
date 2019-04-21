@@ -21,14 +21,18 @@ before_install:
 install:
   - npm install
 
-script:
+before_script:
   - npm run build
   - npm run local
 
-
 after_script:
+  - cp README.md ./local/
   - cd ./local
   - git init
   - git add .
   - git commit -m "Update tools"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+  - rm -rf local
+
+after_success:
+  - echo "success"
