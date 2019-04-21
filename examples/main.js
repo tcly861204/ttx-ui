@@ -15,7 +15,13 @@ const router = new VueRouter({
     routes: [
         {
             path: '/button',
-            component: (resolve) => require(['./routers/button.vue'], resolve)
+            name: 'button',
+            meta: {
+                hideInMenu: true,
+                title: '首页',
+                notCache: true
+            },
+            component: () => import(/* webpackChunkName: "button" */ '@/button.vue')
         }
     ]
 });

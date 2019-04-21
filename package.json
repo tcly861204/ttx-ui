@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config config/webpack.dev.config.js",
-    "local": "webpack --config config/webpack.dev.config.js",
+    "local": "webpack --config config/webpack.local.config.js",
     "build": "webpack --config config/webpack.prod.config.js",
     "start": "npm run dev"
   },

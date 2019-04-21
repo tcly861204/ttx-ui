@@ -14,6 +14,9 @@ module.exports = {
     chunkFilename: "[name].chunk.js"
   },
   resolve: {
+    alias: {
+      "@": path.resolve(__dirname, '../examples/routers')
+    },
     extensions: [
       '.web.js',
       '.mjs',
@@ -117,9 +120,6 @@ module.exports = {
   },
   plugins: [  // 数组,放着所有的webpack插件
     new VueLoaderPlugin(),
-    new MiniCssExtractPlugin({
-      filename: 'css/[name].[hash:8].css'
-    }),
     new OptimizeCSSAssetsPlugin({
       cssProcessor: require('cssnano'), //引入cssnano配置压缩选项
       cssProcessorOptions: {
@@ -127,7 +127,7 @@ module.exports = {
       }
     }),
     new CleanWebpackPlugin({
-      cleanAfterEveryBuildPatterns: ['dist/*.*'],
+      cleanAfterEveryBuildPatterns: ['dist'],
       root: path.resolve(__dirname, '..'),
       verbose: false,
       dry: false
