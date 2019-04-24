@@ -12,6 +12,16 @@ const router = new VueRouter({
     mode: 'hash',
     routes: [
         {
+            path: '/install',
+            name: 'install',
+            meta: {
+                hideInMenu: true,
+                title: '安装',
+                notCache: true
+            },
+            component: () => import(/* webpackChunkName: "button" */ '@/install.vue')
+        },
+        {
             path: '/button',
             name: 'button',
             meta: {
@@ -20,6 +30,16 @@ const router = new VueRouter({
                 notCache: true
             },
             component: () => import(/* webpackChunkName: "button" */ '@/button.vue')
+        },
+        {
+            path: '/notify',
+            name: 'notify',
+            meta: {
+                hideInMenu: true,
+                title: '首页',
+                notCache: true
+            },
+            component: () => import(/* webpackChunkName: "button" */ '@/notify.vue')
         }
     ]
 });

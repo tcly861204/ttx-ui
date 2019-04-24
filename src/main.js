@@ -1,4 +1,7 @@
+import './assets/styles/global.css';
 import Button from './components/button';
+import notify from './components/notification/function';
+
 const components = {
   Button
 };
@@ -12,6 +15,7 @@ const install = function(Vue, opts = {}) {
     Object.keys(ttx).forEach(key => {
         Vue.component(key, ttx[key]);
     });
+    Vue.prototype.$notify = notify
 };
 
 // auto install
@@ -28,4 +32,4 @@ const API = {
 
 // module.exports.default = module.exports = API;   // eslint-disable-line no-undef
 
-export default API
+export default API;
