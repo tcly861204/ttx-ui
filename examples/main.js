@@ -19,7 +19,7 @@ const router = new VueRouter({
                 title: '安装',
                 notCache: true
             },
-            component: () => import(/* webpackChunkName: "button" */ '@/install.vue')
+            component: () => import(/* webpackChunkName: "install" */ '@/install.vue')
         },
         {
             path: '/button',
@@ -39,7 +39,7 @@ const router = new VueRouter({
                 title: '首页',
                 notCache: true
             },
-            component: () => import(/* webpackChunkName: "button" */ '@/notify.vue')
+            component: () => import(/* webpackChunkName: "notify" */ '@/notify.vue')
         }
     ]
 });
