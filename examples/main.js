@@ -12,14 +12,14 @@ const router = new VueRouter({
     mode: 'hash',
     routes: [
         {
-            path: '/',
-            name: 'home',
-            meta: {
-                hideInMenu: true,
-                title: '安装',
-                notCache: true
-            },
-            component: () => import(/* webpackChunkName: "home" */ '@/home.vue')
+          path: '/',
+          name: 'home',
+          meta: {
+            hideInMenu: true,
+            title: 'home',
+            notCache: true
+          },
+          component: () => import(/* webpackChunkName: "home" */ '@/home.vue')
         },
         {
           path: '/install',
