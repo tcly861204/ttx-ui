@@ -22,7 +22,7 @@ const router = new VueRouter({
             component: () => import(/* webpackChunkName: "home" */ '@/home.vue')
         },
         {
-          path: '/',
+          path: '/install',
           name: 'install',
           meta: {
               hideInMenu: true,
