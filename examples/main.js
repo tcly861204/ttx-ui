@@ -22,6 +22,16 @@ const router = new VueRouter({
             component: () => import(/* webpackChunkName: "home" */ '@/home.vue')
         },
         {
+          path: '/',
+          name: 'install',
+          meta: {
+              hideInMenu: true,
+              title: '安装',
+              notCache: true
+          },
+          component: () => import(/* webpackChunkName: "install" */ '@/install.vue')
+        },
+        {
             path: '/button',
             name: 'button',
             meta: {
