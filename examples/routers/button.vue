@@ -5,6 +5,11 @@
 </template>
 <script>
 export default {
-  name: 'button'
+  name: 'ttx-button',
+  data () {
+    return {
+
+    }
+  }
 }
 </script>

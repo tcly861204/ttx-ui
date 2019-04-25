@@ -5,7 +5,12 @@
 </template>
 <script>
 export default {
-  name: 'notify',
+  name: 'ttx-notify',
+  data () {
+    return {
+      
+    }
+  },
   methods: {
     handleClick (v) {
       this.$notify({

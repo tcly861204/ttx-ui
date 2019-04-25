@@ -7,7 +7,9 @@
 export default {
   name: 'install',
   data () {
-    
+    return {
+      
+    }
   }
 }
 </script>

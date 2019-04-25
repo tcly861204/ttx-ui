@@ -5,7 +5,12 @@
 </template>
 <script>
 export default {
-  name: 'home'
+  name: 'ttx-home',
+  data () {
+    return {
+
+    }
+  }
 }
 </script>
 
