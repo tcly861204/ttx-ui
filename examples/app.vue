@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <header class="header">
-      <h1>TTX-UI</h1>
+      <h1>
+        <router-link to="/">TTX-UI</router-link>
+      </h1>
     </header>
     <section>
       <nav>
