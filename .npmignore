@@ -4,4 +4,6 @@
 build/
 node_modules/
 test/
+src/
+*-lock.json
 gulpfile.js
