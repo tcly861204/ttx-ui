@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{27:function(t,e,n){"use strict";n.r(e);var i=function(){var t=this.$createElement;return(this._self._c||t)("div",[this._v("\n  安装\n")])};i._withStripped=!0;var l={name:"install",data:()=>({})},s=n(1),a=Object(s.a)(l,i,[],!1,null,null,null);a.options.__file="examples/routers/install.vue";e.default=a.exports}}]);
