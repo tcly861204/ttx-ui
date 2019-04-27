@@ -4,3 +4,5 @@ Tontisa Ui 库
 
 
 [![Build Status](https://www.travis-ci.org/tcly861204/ttx-ui.svg?branch=master)](https://www.travis-ci.org/tcly861204/ttx-ui)
+
+[![NPM downloads]](https://npmjs.org/package/ttx-ui)
