@@ -6,3 +6,7 @@ node_modules/
 test/
 src/
 gulpfile.js
+config/
+examples/
+local/
+.babelrc
