@@ -1,6 +1,6 @@
 {
   "name": "ttx-ui",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "vue components ui",
   "main": "dist/ttx.min.js",
   "scripts": {
